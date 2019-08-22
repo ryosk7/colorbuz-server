@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+```
+$ docker-compose build
+$ docker-compose up
+$ docker-compose run web rails db:create
+# If your PC is Mac, you can use under command.
+$ open http://localhost:3000
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## For starter
+```
+$ docker-compose build
+$ docker-compose up
+$ docker-compose run web rails db:create
+$ docker-compose exec web rails g scaffold posts
+# If your PC is Mac, you can use under command.
+$ open http://localhost:3000/post
+```s
