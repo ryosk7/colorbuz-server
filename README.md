@@ -17,4 +17,4 @@ $ docker-compose run web rails db:create
 $ docker-compose exec web rails g scaffold posts
 # If your PC is Mac, you can use under command.
 $ open http://localhost:3000/post
-```s
+```
