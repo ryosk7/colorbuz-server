@@ -32,3 +32,8 @@ $ docker-compose exec web rails db:migrate
 # 対象のtableのmigrationファイルに変更を加えて、
 $ docker-compose exec web rails db:migrate:reset
 ```
+
+## cURL操作
+```
+$ curl -X localhost:8000 -d 'post[title]sample&post[content]Hello World!'
+```
