@@ -35,5 +35,5 @@ $ docker-compose exec web rails db:migrate:reset
 
 ## cURL操作
 ```
-$ curl -X localhost:8000 -d 'post[title]sample&post[content]Hello World!'
+$ curl -X localhost:8000/posts -d 'post[title]sample&post[content]Hello World!'
 ```
